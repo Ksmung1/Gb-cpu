@@ -234,7 +234,7 @@ const Wallet = () => {
 
       // Call backend /topup-coin endpoint
       // Backend expects: { uid, amount, username, date, time }
-      const endpoint = user?.role === "admin" ? "topup-coin"  : user?.role === "reseller" ? "topup-coin" : "customer-coin";
+      const endpoint =  "customer-coin";
       const { data } = await axios.post(
         `${import.meta.env.VITE_PAYMENT_URL}/${endpoint}`,
       {

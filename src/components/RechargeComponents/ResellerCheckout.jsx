@@ -124,10 +124,7 @@ const ResellerCheckout = ({
     try {
       showAlert("Redirecting to payment...");
       // const url = user.role === "reseller" || user.role === "admin" ?  `${import.meta.env.VITE_PAYMENT_URL}/payment/start-order` : `${import.meta.env.VITE_PAYMENT_URL}/matrixsols/start-payment`
-      const url =
-        user.role === "reseller" || user.role === "admin"
-          ? `${import.meta.env.VITE_PAYMENT_URL}/payment/start-order`
-          : `${import.meta.env.VITE_PAYMENT_URL}/customer/start-order`;
+      const url = `${import.meta.env.VITE_PAYMENT_URL}/customer/start-order`;
 
       const axiosInstance = axios.create({ timeout: 5000 });
       const { data } = await axiosInstance.post(url, {

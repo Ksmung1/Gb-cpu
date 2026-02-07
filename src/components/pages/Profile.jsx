@@ -86,7 +86,7 @@ const menuItems = [
   { label: "Order History", path: "/orders", icon: <FiShoppingCart />, color: "text-indigo-500" }, // replaced FiShoppingBag
   { label: "Queue", path: "/redeem", icon: <FiList />, color: "text-red-500" },
   { label: "Balance History", path: `/check-history/${user?.uid || "uhei293uwvuewg"}`, icon: <FiBookOpen />, color: "text-teal-500" }, // replaced with FiBookOpen
-  { label: "API", path: `/api`, icon: <Code />, color: "text-blue-500" }, // replaced with FiBookOpen
+  // { label: "API", path: `/api`, icon: <Code />, color: "text-blue-500" }, // replaced with FiBookOpen
 ];
 
 

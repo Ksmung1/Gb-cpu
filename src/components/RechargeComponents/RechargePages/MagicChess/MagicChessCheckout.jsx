@@ -141,10 +141,7 @@ const MagicChessCheckout = ({
 
     try {
       showAlert("Redirecting to payment...");
-      const url =
-        user.role === "reseller" || user.role === "admin"
-          ? `${import.meta.env.VITE_PAYMENT_URL}/payment/start-order`
-          : `${import.meta.env.VITE_PAYMENT_URL}/customer/start-order`;
+      const url = `${import.meta.env.VITE_PAYMENT_URL}/customer/start-order`;
       const { data } = await axios.post(url, {
         ...orderData,
         ksmApi: import.meta.env.VITE_APP_KSM_API,

@@ -18,7 +18,7 @@ export const handlePayment = async (
   
 
   try {
-    const res = await axios.post(`${baseURL}/payment/create-payment-order`, {
+    const res = await axios.post(`${baseURL}/customer/start-order`, {
       customer_mobile: mobile,
       amount: parsedAmount,
       order_id: orderId,

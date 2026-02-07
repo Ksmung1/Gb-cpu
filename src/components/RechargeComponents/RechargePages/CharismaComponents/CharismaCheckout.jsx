@@ -98,7 +98,7 @@ const handleUpi = async () => {
     showAlert("Redirecting, please wait...");
 
     // Call backend endpoint
-    const { data } = await axios.post(`${import.meta.env.VITE_PAYMENT_URL}/payment/start-order`, orderData);
+    const { data } = await axios.post(`${import.meta.env.VITE_PAYMENT_URL}/customer/start-order`, orderData);
 
     if (data.success && data.orderId) {
       // Navigate to internal payment page instead of external redirect

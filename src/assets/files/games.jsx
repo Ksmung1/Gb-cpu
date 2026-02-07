@@ -31,41 +31,41 @@ const games = [
     route: '/where-winds-meet',
     filter: 'other'
   },
-     {
-    id: 8,
-    name: "Genshin Impact",
-    img: genshin,
-    route: '/genshin-impact',
-    filter: 'popular'
-  },
-               {
-    id: 13,
-    name: "Wuthering Waves",
-    img: wuthering,
-    route: '/wuthering-waves',
-    filter: 'popular'
-  },
-             {
+  //    {
+  //   id: 8,
+  //   name: "Genshin Impact",
+  //   img: genshin,
+  //   route: '/genshin-impact',
+  //   filter: 'popular'
+  // },
+  //              {
+  //   id: 13,
+  //   name: "Wuthering Waves",
+  //   img: wuthering,
+  //   route: '/wuthering-waves',
+  //   filter: 'popular'
+  // },
+        {
     id: 11,
     name: "Super Sus",
     img: supersus,
     route: '/super-sus',
     filter: 'others'
   },
-           {
-    id: 9,
-    name: "Zenless Zone Zero",
-    img: zenless,
-    route: '/zzz',
-    filter: 'popular'
-  },
-    {
-    id: 15,
-    name: "Honor of Kings",
-    img: hok,
-    route: '/honor-of-kings',
-    filter: 'popular'
-  },
+  //          {
+  //   id: 9,
+  //   name: "Zenless Zone Zero",
+  //   img: zenless,
+  //   route: '/zzz',
+  //   filter: 'popular'
+  // },
+  //   {
+  //   id: 15,
+  //   name: "Honor of Kings",
+  //   img: hok,
+  //   route: '/honor-of-kings',
+  //   filter: 'popular'
+  // },
   
              {
     id: 14,
@@ -85,13 +85,13 @@ const games = [
     filter: 'popular'
   },
 
-        {
-    id: 10,
-    name: "PUBG Global",
-    img: pubg,
-    route: '/pubg-global',
-    filter: 'popular'
-  },
+  //       {
+  //   id: 10,
+  //   name: "PUBG Global",
+  //   img: pubg,
+  //   route: '/pubg-global',
+  //   filter: 'popular'
+  // },
     {
     id: 3,
     name: "Honkai Star Rail",
@@ -119,13 +119,13 @@ const games = [
     filter: 'popular'
   },
 
-  {
-    id: 6,
-    name: "MLBB (Small packs)",
-    img: moskov,
-    route: '/mlbb-global',
-    filter: 'other'
-  },
+  // {
+  //   id: 6,
+  //   name: "MLBB (Small packs)",
+  //   img: moskov,
+  //   route: '/mlbb-global',
+  //   filter: 'other'
+  // },
 
   {
     id: 2,

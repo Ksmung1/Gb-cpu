@@ -225,7 +225,7 @@ const AppContent = () => {
             </AdminRoute>
           }
         />
-        <Route
+        {/* <Route
           path="/api"
           element={
             <RequireAdmin>
@@ -280,7 +280,7 @@ const AppContent = () => {
               <ApiAdminDashboard />
             </RequireAdmin>
           }
-        />
+        /> */}
         <Route path="*" element={<Home />} />
       </Routes>
       <div className={hideShortcut ? "" : "block h-13"}></div>

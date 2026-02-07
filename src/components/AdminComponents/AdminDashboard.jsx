@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { fetchUsers } from "../../utils/fetchUsers";
 import { fetchGlobalOrders } from "../../utils/fetchGlobalOrders";
 import { useDarkMode } from "../../context/DarkModeContext";
-import { getYokcashBalance } from "../../utils/getYokcashBalance"; // <-- your util
 import axios from "axios";
 import { fetchGlobalCount } from "../../utils/fetchGlobalsCount";
 
@@ -24,7 +23,6 @@ const AdminDashboard = () => {
 
   const [selectedPeriod, setSelectedPeriod] = useState("all");
 
-  const [yokcash, setYokcash] = useState(null);
   const [smile, setSmile] = useState(null);
 
   // Parse "dd-mm-yyyy" to Date
@@ -123,14 +121,7 @@ const AdminDashboard = () => {
 
   // Fetch balances separately (no blocking)
   useEffect(() => {
-    (async () => {
-      try {
-        const balance = await getYokcashBalance();
-        setYokcash(balance);
-      } catch (err) {
-        console.error("Yokcash fetch failed:", err);
-      }
-    })();
+
 
     (async () => {
       try {
@@ -176,11 +167,7 @@ const AdminDashboard = () => {
 
       {/* Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <StatCard
-          title="Yokcash Balance"
-          value={yokcash !== null ? `${yokcash}` : "Loading..."}
-          isDarkMode={isDarkMode}
-        />
+  
         <StatCard
           title="Smile Balance"
           value={smile !== null ? smile : "Loading..."}
